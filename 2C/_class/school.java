@@ -2,7 +2,6 @@ package _class;
 
 public class school {
 	public static void main(String[] args) {
-		
 	}
 	String name;
 	String sex;
@@ -10,8 +9,8 @@ public class school {
 	String professional;
 	int birthday;
 	int num;
-	public String showName() {
-		return name;
+	public void showName() {
+		System.out.println(name);
 	}
 	public void showSex() {
 		System.out.println(sex);

@@ -1,14 +1,16 @@
 package _class;
 
 public class student extends school {
-	private String name="12";
+	
 	public student(String name,String sex,int num) {
-		super();
 		this.name=name;
 		this.sex=sex;
 		this.num=num;
 	}
-	public void hello() {
-		System.out.println(name);
+	public static void main(String[] args) {
+		student n=new student("lilei","女",1223);
+		n.showName();
+		n.showNum();
+		n.showSex();
 	}
 }

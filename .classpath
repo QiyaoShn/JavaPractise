@@ -6,6 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="2C"/>
-	<classpathentry kind="src" path="3C"/>
+	<classpathentry excluding="triangleSqure/calander.java" kind="src" path="3C"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
