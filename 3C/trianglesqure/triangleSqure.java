@@ -1,4 +1,4 @@
-package triangleSqure;
+package trianglesqure;
 
 import java.util.Scanner;
 public class triangleSqure {

@@ -1,4 +1,4 @@
-package MyGraphic;
+package mygraphic;
 
 public class Circle extends MyGraphic {
 	int r;

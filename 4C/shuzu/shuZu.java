@@ -1,10 +1,11 @@
-package shuZu;
+package shuzu;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class shuZu {
 	public static void main(String[] args) {
+		System.out.println("输入数字0结束输入：");
 		int x,i; 
 		int y[]= {0};  
 		shuZu Word1=new shuZu(); 

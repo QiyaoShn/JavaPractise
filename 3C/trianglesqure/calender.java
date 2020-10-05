@@ -1,4 +1,4 @@
-package triangleSqure;
+package trianglesqure;
 
 import java.time.LocalDate;
 import java.util.Calendar;

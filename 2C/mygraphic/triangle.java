@@ -1,4 +1,4 @@
-package MyGraphic;
+package mygraphic;
 
 public class triangle extends MyGraphic {
 	int z;

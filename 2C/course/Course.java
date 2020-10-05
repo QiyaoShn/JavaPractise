@@ -1,4 +1,4 @@
-package Course;
+package course;
 
 class Course {
 	String name;
