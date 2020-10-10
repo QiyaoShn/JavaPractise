@@ -7,6 +7,7 @@ public class Student {
 	int num;
 	int grade1,grade2,grade3;
 	double score1,score2,score3;
+	
 	public Student(String name,int num,String sex,int grade1,
 	int grade2,int grade3,double score1,double score2,double score3) {
 		this.name=name;
@@ -19,9 +20,12 @@ public class Student {
 		this.score2=score2;
 		this.score3=score3;
 	}
+	public Student() {
+		
+	}
 	public static void main(String[] args) {
 		double sum[]= {};
-		sum=Arrays.copyOf(sum, 6);
+		sum=Arrays.copyOf(sum, 7);
 		Student m[]= {};
 		m=Arrays.copyOf(m, 6);
 		m[0]=new Student("lilei",001,"男",90,89,78,
@@ -36,28 +40,27 @@ public class Student {
 				4.0,3.0,2.9);
 		m[5]=new Student("hubei",006,"男",65,67,68,
 				1.5,1.7,1.8);
-		for(int i=0;i<6;i++) {
-			sum[i]=m[i].scoreplus(m[i].score1,m[i].score2,m[i].score3);
+		for(int i=0,j=1;i<6;i++,j++) {
+			sum[j]=(m[i].score1*m[i].score2*m[i].score3);
+		}
+		Student stu =new Student();
+		stu.sorted(sum);
+		for(int i=1;i<7;i++) {
+			System.out.println(sum[i]);
 		}
 	}
-	double scoreplus(double x,double y,double z) {
-		return x*y*z;
-	}
-	double[] sorted(double m[]) {
+	public void sorted(double m[]) {
 		int i,j,t;
 		double k;
-		for(i=0;i<5;i++) {
-			t=i;
-			for(j=i+1;j<6;j++) {
-				if(m[t]>m[j]) 
-					t=j;
-				if(t!=i) {
-					k=m[t];
-					m[t]=m[i];
-					m[i]=m[t];
+		for(i=1;i<7;i++) {
+			for(j=1;j<7-i;j++) {
+				if(m[j]>m[j+1]) {
+					k=m[j];
+					m[j]=m[j+1];
+					m[j+1]=k;
 				}
+					
 			}
 		}
-		return m;
 	}
 }
