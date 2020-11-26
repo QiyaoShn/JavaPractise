@@ -7,6 +7,7 @@ public class JuZhenCheng implements Runnable{
 	static Random ran = new Random();
 	@Override
 	public void run() {
+		long startTime=System.currentTimeMillis() ; 
 		int len = ran.nextInt(5000);
 		int a[][]=new int[len][len] ;
 		int b[][]=new int[len][len] ;
@@ -20,7 +21,6 @@ public class JuZhenCheng implements Runnable{
 				b[i][j]=ran.nextInt(5);
 			}
 		}
-		
 		int num[]= {0};
 		int sum=0;
 		int i=0,j=0,k=0;
@@ -36,6 +36,8 @@ public class JuZhenCheng implements Runnable{
 			}
 			System.out.println();
 		}
+		long endTime=System.currentTimeMillis(); 
+		System.out.println((endTime-startTime)/1000+"s"); 
 	}
 	public static void main(String[] args) {
 		Runnable a = new JuZhenCheng();
