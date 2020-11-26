@@ -8,7 +8,7 @@ public class JuZhenCheng implements Runnable{
 	@Override
 	public void run() {
 		long startTime=System.currentTimeMillis() ; 
-		int len = ran.nextInt(5000);
+		int len = ran.nextInt(500);
 		int a[][]=new int[len][len] ;
 		int b[][]=new int[len][len] ;
 		for(int i=0;i<a.length;i++) {
@@ -37,7 +37,7 @@ public class JuZhenCheng implements Runnable{
 			//System.out.println();
 		}
 		long endTime=System.currentTimeMillis(); 
-		System.out.println((endTime-startTime)/1000+"s"); 
+		System.out.println((endTime-startTime)+"ms"); 
 	}
 	public static void main(String[] args) {
 		Runnable a = new JuZhenCheng();
