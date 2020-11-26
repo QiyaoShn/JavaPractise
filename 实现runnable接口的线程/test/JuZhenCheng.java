@@ -2,7 +2,7 @@ package test;
 
 import java.util.Arrays;
 import java.util.Random;
-
+//单线程实现矩阵乘法
 public class JuZhenCheng implements Runnable{
 	static Random ran = new Random();
 	@Override
@@ -32,9 +32,9 @@ public class JuZhenCheng implements Runnable{
 				for(k=0;k<b.length;k++) {
 					 lie[j+1]+=a[i][k]*b[k][j];
 				}
-				System.out.print(" "+lie[j+1]);
+				//System.out.print(" "+lie[j+1]);
 			}
-			System.out.println();
+			//System.out.println();
 		}
 		long endTime=System.currentTimeMillis(); 
 		System.out.println((endTime-startTime)/1000+"s"); 
