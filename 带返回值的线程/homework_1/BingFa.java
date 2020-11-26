@@ -26,7 +26,7 @@ public class BingFa {
 		}
 	}
 }
-class Task implements Callable<String>{
+class Task implements Callable<String>{//带返回值的线程
 	@Override
 	public String call() throws Exception {
 		Thread.sleep(300);
