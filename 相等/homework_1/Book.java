@@ -15,15 +15,34 @@ public class Book {
 		this.name = name;
 		this.ChuBan = ChuBan;
 	}
-	public int hashCode() {		//自定义哈希值（重写）
-		return ChuBan.hashCode();
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((ChuBan == null) ? 0 : ChuBan.hashCode());
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		return result;
 	}
-	public boolean equals(Object o) {	//自定义相等属性（重写）
-		Book book = (Book)o;
-		if (name.equals(book.name)&&ChuBan.equals(book.ChuBan)){
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
 			return true;
-		}else
+		if (obj == null)
 			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Book other = (Book) obj;
+		if (ChuBan == null) {
+			if (other.ChuBan != null)
+				return false;
+		} else if (!ChuBan.equals(other.ChuBan))
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
 	}
 	public static void main(String[] args) {
 		Set<Book> set = new HashSet();
