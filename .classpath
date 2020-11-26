@@ -9,5 +9,12 @@
 	<classpathentry excluding="triangleSqure/calander.java" kind="src" path="3C"/>
 	<classpathentry kind="src" path="4C"/>
 	<classpathentry kind="src" path="11C"/>
+	<classpathentry kind="src" path="9C"/>
+	<classpathentry kind="src" path="5C"/>
+	<classpathentry kind="src" path="Homework"/>
+	<classpathentry kind="src" path="12C"/>
+	<classpathentry kind="src" path="带返回值的线程"/>
+	<classpathentry kind="src" path="相等"/>
+	<classpathentry kind="src" path="TreeSet自定义排序"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

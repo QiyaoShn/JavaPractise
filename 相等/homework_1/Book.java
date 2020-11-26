@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Book {
-	private String name;
+	String name;
 	private String ChuBan;
 	public Book() {
 		name="";
@@ -45,7 +45,7 @@ public class Book {
 		return true;
 	}
 	public static void main(String[] args) {
-		Set<Book> set = new HashSet();
+		Set<Book> set = new HashSet(); //HashSet排重
 		Book book1 = new Book("哈利波特","新华出版社");
 		Book book2 = new Book("千与千寻","华中师范大学出版社");
 		Book book3 = new Book("千与千寻","华中师范大学出版社");

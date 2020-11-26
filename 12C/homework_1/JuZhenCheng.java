@@ -7,17 +7,17 @@ public class JuZhenCheng implements Runnable{
 	static Random ran = new Random();
 	@Override
 	public void run() {
-		int len = ran.nextInt(10000);
+		int len = ran.nextInt(50000);
 		int a[][]=new int[len][len] ;
 		int b[][]=new int[len][len] ;
 		for(int i=0;i<a.length;i++) {
 			for(int j=0;j<a[0].length;j++) {
-				a[i][j]=ran.nextInt(a.length);
+				a[i][j]=ran.nextInt(5);
 			}
 		}
 		for(int i=0;i<b.length;i++) {
 			for(int j=0;j<b[0].length;j++) {
-				b[i][j]=ran.nextInt(b.length);
+				b[i][j]=ran.nextInt(5);
 			}
 		}
 		
@@ -34,7 +34,7 @@ public class JuZhenCheng implements Runnable{
 				}
 				System.out.print(" "+lie[j+1]);
 			}
-			System.out.print("\n");
+			System.out.println();
 		}
 	}
 	public static void main(String[] args) {
