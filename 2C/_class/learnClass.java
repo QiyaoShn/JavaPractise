@@ -4,7 +4,7 @@ public class learnClass extends school {
 	int classNum;
 	int studentNumber;
 	public learnClass(int classNum,String name,int 
-			studentNumber) {
+			studentNumber){
 		this.classNum=classNum;
 		this.name=name;
 		this.studentNumber=studentNumber;

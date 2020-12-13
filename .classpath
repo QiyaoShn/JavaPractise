@@ -12,9 +12,10 @@
 	<classpathentry kind="src" path="9C"/>
 	<classpathentry kind="src" path="5C"/>
 	<classpathentry kind="src" path="Homework"/>
-	<classpathentry kind="src" path="12C"/>
 	<classpathentry kind="src" path="带返回值的线程"/>
 	<classpathentry kind="src" path="相等"/>
 	<classpathentry kind="src" path="TreeSet自定义排序"/>
+	<classpathentry kind="src" path="实现runnable接口的线程"/>
+	<classpathentry kind="src" path="对集合中数据的操作"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

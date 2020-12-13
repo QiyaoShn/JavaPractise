@@ -1,7 +1,10 @@
 package test;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Set;
 import java.util.Vector;
 
 public class test {
@@ -27,5 +30,18 @@ public class test {
 		book3.add(1, "知道真相的我眼泪掉下来");
 		System.out.println(book3.get(1));
 		System.out.println(book3.get(3));
+		
+		Set<String> book4 = new HashSet<String>();
+		book4.add("不在沉默中爆发");
+		book4.add("就在沉默中灭亡");
+		book4.add("编程大法哪家强");
+		book4.add("中国山东找蓝翔");
+		Iterator<String> books = book4.iterator();
+		while(books.hasNext()) {
+			System.out.println(books.next());
+		}System.out.println();
+		for(String book:book4) {
+			System.out.println(book);
+		}
 	}
 }
