@@ -1,5 +1,6 @@
 package trianglesqure;
 
+import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Scanner;
@@ -7,6 +8,7 @@ import java.util.Scanner;
 public class calender {
 	
 	public static void main(String[] args) {
+		try {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("请输入月份：");
 		int month1=sc.nextInt();
@@ -81,6 +83,9 @@ public class calender {
 		LocalDate date2=LocalDate.of(sc.nextInt(), sc.nextInt(), sc.nextInt());
 		long Day=Math.abs(date1.toEpochDay()-date2.toEpochDay());
 		System.out.printf("这两个日期相差了%d天",Day);
-		sc.close();
+		sc.close();}
+		catch(DateTimeException e){
+			System.out.println("请输入正确的日期格式！");
+		}
 	}
 }
