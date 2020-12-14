@@ -17,5 +17,6 @@
 	<classpathentry kind="src" path="TreeSet自定义排序"/>
 	<classpathentry kind="src" path="实现runnable接口的线程"/>
 	<classpathentry kind="src" path="对集合中数据的操作"/>
+	<classpathentry kind="src" path="class1"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
