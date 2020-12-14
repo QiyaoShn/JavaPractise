@@ -18,5 +18,4 @@ public class Car {
 	public void gas(double gasl) {
 		tank=tank+gasl;
 	}
-	
 }

@@ -10,4 +10,5 @@ public class Point {
 		Point3d subp = new Point3d();
 		subp.print();
 	}
+	
 }
